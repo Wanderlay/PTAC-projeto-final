@@ -11,6 +11,7 @@ export default function Home(){
     const [Id, setId] = useState(0)
 
     return(
+       <div> 
         <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -18,22 +19,28 @@ export default function Home(){
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
+            
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">cadastrar-se/login</a></a>
+                <a class="nav-link" href="#">cadastrar-se/login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Em alta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled"></a>
+                <a class="nav-link disabled" href="#">ha</a>
               </li>
             </ul>
+         
           </div>
+       
         </div>
-      </nav>
+      </nav> 
+      </div>
+
+      
      );
 }
