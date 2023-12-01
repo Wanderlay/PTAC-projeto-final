@@ -25,7 +25,7 @@ export default function Home(){
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">cadastrar-se/login</a>
+                <Link class="nav-link" to="/login">cadastrar-se/login</Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Em alta</a>
