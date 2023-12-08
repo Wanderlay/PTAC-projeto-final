@@ -142,7 +142,18 @@ export default function Home(){
         </div>
       </div>
 
-   
+      {letras.map((ativ, index) => (
+            <div key={index}>
+             
+                  <p>{ativ.letra}</p>
+                  <div className="azul">
+                    <button id={ativ.Id} onClick={() => apagarLetra(index)} className="btn btn-primary">Apagar</button>
+                    <button id={ativ.letra} onClick={() => MostraLetra(ativ.letra)} className="btn btn-primary">Descrição</button>
+                  </div>
+                </div>
+          
+          
+          ))}
 
 
       </div>
