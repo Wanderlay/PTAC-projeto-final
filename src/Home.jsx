@@ -14,6 +14,7 @@ export default function Home(){
     const [Id, setId] = useState(0);
     const [resumo, setResumo] = useState("");
     const [autor, setAutor] = useState("")
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
       localStorage.setItem("itens", JSON.stringify(biblioteca));
@@ -29,21 +30,20 @@ export default function Home(){
       setBiblioteca([
         ...biblioteca,
         {
-          conteudo: conteudo,
+          letra: letra,
           video: video,
           nome: nome,
           Id: Id,
           resumo: resumo,
           autor: autor,
-          letra: letra
         },
       ]);
-      setConteudo("");
+      setLetra(""); 
       setNome("");
       setVideo("");
       setId(Id + 1);
       setAutor("");
-      setLetra("");
+      setResumo("");
       setCount(count + 1);
     };
    
@@ -69,9 +69,7 @@ export default function Home(){
 
 
     const MostraLetra = (index) => {
-      const novaletras = [index];
-      
-      setLetras(novaletras);
+      setLetras([index]);
     };
   
 
@@ -147,8 +145,8 @@ export default function Home(){
              
                   <p>{ativ.letra}</p>
                   <div className="azul">
-                    <button id={ativ.Id} onClick={() => apagarLetra(index)} className="btn btn-primary">Apagar</button>
-                    <button id={ativ.letra} onClick={() => MostraLetra(ativ.letra)} className="btn btn-primary">Descrição</button>
+                    <button id={ativ.Id} onClick={() => apagarLetra(index)} className="btn btn-primary">Fechar</button>
+                    
                   </div>
                 </div>
           
