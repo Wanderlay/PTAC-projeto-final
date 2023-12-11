@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './styles.css';
-
-
+<link rel="stylesheet" type="text/css" href="/styles.css"></link>
 
 export default function Home() {
   const alStorage = localStorage.getItem("itens");
@@ -114,7 +112,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <form onSubmit={salvar}>
+      <form onSubmit={salvar} className="container text-center">
         <div>
           <h2>Nome</h2>
           <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" />
@@ -134,8 +132,9 @@ export default function Home() {
         <div>
           <h2>Resumo do vídeo</h2>
           <input value={resumo} onChange={(e) => setResumo(e.target.value)} type="text" />
+          <br></br>
         </div>
-
+     
         <button type="submit">ADD</button>
       </form>
 
