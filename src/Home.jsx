@@ -69,8 +69,8 @@ export default function Home() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-light" >
+        <div className="container-fluid" >
           <a className="navbar-brand" href="#">
             Navbar
           </a>
@@ -83,9 +83,9 @@ export default function Home() {
             aria-expanded="false"
             aria-div="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon " ></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse" id="navbarNav" color="32.178.170">
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -104,7 +104,7 @@ export default function Home() {
               </li>
               <li className="nav-item">
                 <a className="nav-link disabled" href="#">
-                  ha
+                  Voltar
                 </a>
               </li>
             </ul>
@@ -136,10 +136,11 @@ export default function Home() {
         </div>
      
         <button type="submit">ADD</button>
+        <br></br>
       </form>
 
 
-
+<br></br>
 
       <div className="container text-center">
         <div className="row">

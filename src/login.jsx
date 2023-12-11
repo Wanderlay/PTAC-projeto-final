@@ -5,8 +5,8 @@ export default function Login(){
 
     return(
         <div>
-            < p>olhoolhoolho</p>
-            <Link to="/">HA</Link>
+            < p>Teste</p>
+            <Link to="/">VOLTAR</Link>
         </div>
     )
 }
