@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import './styles.css';
+
+
 
 export default function Home() {
   const alStorage = localStorage.getItem("itens");
@@ -136,6 +139,9 @@ export default function Home() {
         <button type="submit">ADD</button>
       </form>
 
+
+
+
       <div className="container text-center">
         <div className="row">
           {biblioteca.map((ativ, index) => (
@@ -186,3 +192,4 @@ export default function Home() {
     </div>
   );
 }
+
